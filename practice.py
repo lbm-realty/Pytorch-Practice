@@ -29,4 +29,6 @@ if __name__ == "__main__":
     model = NeuralNetwork(input_size=1, hidden_size=10, output_size=1)
     loss_fn = nn.MSELoss()
     optimizer = optim.SGD(model.parameters(), lr=0.001)
-    train(x, y, 100, optimizer, loss_fn, model)
+    # train(x, y, 100, optimizer, loss_fn, model)
+    a = torch.arange(1, 11).reshape(-1, 1)
+    print(a)
