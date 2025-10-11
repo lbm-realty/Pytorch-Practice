@@ -16,6 +16,6 @@ dataset = ToyDataset()
 loader = DataLoader(dataset, batch_size=5, shuffle=True)
 
 for batch in loader:
-    x_batch, y_batch = batch
+    x_batch, y_batch =  batch
     print(f"X: {x_batch}")
     print(f"Y: {y_batch}")
